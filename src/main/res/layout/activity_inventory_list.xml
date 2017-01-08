@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventoryListActivity">
+
+    <LinearLayout
+        android:id="@+id/linlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+            <LinearLayout
+                android:id="@+id/linlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:orientation="horizontal"
+                android:paddingEnd="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingStart="16dp">
+                <LinearLayout
+                    android:id="@+id/linlayout3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="0.89"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/productNameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="2"
+                            android:textAllCaps="true"
+                            android:textSize="10sp"
+                            android:lines="2"
+                            tools:text="Product Name" />
+                        <TextView
+                            android:id="@+id/retailPriceTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9sp"
+                            tools:text="Retail: $500.00" />
+                        <TextView
+                            android:id="@+id/inStockTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:textSize="9sp"
+                            android:text="Qty: 93" />
+                </LinearLayout>
+                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:id="@+id/linlayout4"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <Button
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:focusable="false"
+                                        android:onClick="decrement"
+                                        android:text="-" />
+                                    <TextView
+                                        android:id="@+id/saleCounter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAlignment="center"
+                                        android:focusable="false"
+                                        android:text="0"
+                                        />
+                                    <Button
+                                        android:layout_width="48dp"
+                                        android:layout_height="48dp"
+                                        android:focusable="false"
+                                        android:onClick="increment"
+                                        android:text="+" />
+                                    <Button
+                                        android:id="@+id/saleBtn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:focusable="false"
+                                        android:onClick="completeSale"
+                                        android:layout_gravity="end"
+                                        android:text="@string/complete_sale" />
+                </LinearLayout>
+                </LinearLayout>
+              </LinearLayout>
+</RelativeLayout>

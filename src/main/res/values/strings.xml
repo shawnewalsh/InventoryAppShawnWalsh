@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Inventory App Shawn Walsh</string>
+    <string name="empty_view_title_text">Empty List...</string>
+    <string name="empty_view_subtitle_text">Get started by adding a product</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="editor_activity_title_new_product">Add a product</string>
+    <string name="editor_activity_title_edit_product">Edit product</string>
+    <string name="product_overview">What is the product?</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_desc">Product Description</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_cost">Product Cost</string>
+    <string name="editor_insert_prod_successful">Product saved</string>
+    <string name="editor_insert_prod_failed">Error with saving product</string>
+    <string name="editor_update_prod_successful">Product updated</string>
+    <string name="editor_update_prod_failed">Error with updating product</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog_msg">Delete this item?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_prod_successful">Product deleted</string>
+    <string name="editor_delete_prod_failed">Error with deleting product</string>
+    <string name="action_delete_all_entries">Delete All Products</string>
+    <string name="complete_sale">Sell</string>
+</resources>

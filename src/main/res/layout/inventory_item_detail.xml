@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Product Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:id="@+id/productNameDetailTV" />
+    <TextView
+        android:text="Product Description"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="75dp"
+        android:id="@+id/productDescriptionDetailTV" />
+    <TextView
+        android:text="Quantity In Stock: 93"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="wrap_content"
+        android:id="@+id/productQtyDetailTV" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <EditText
+            android:gravity="right"
+            android:text="0"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/border"
+            android:layout_width="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content"
+            android:id="@+id/qtyToSellDetailTV"
+            android:paddingRight="40dp"
+            android:layout_weight="0.99" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Sell"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <EditText
+            android:gravity="right"
+            android:text="0"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/qtyToOrderDetailTV"
+            android:paddingRight="40dp"
+            android:layout_weight="0.99" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Order"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <EditText
+            android:gravity="right"
+            android:text="0"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/qtyToReceiveShipmentDetailTV"
+            android:paddingRight="40dp"
+            android:layout_weight="0.99" />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Receive Shipment"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>
