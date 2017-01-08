@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.example.android.inventoryappshawnwalsh.data.InventoryContract;
 
 public class InvCursorAdapter  extends CursorAdapter {
+    //comment
 
     public InvCursorAdapter(Context context, Cursor c) {
         super(context, c, 0 /* flags */);
