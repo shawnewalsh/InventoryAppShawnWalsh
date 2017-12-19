@@ -1,5 +1,7 @@
 package com.example.android.inventoryappshawnwalsh;
 
+
+
 import android.app.AlertDialog;
 import android.app.LoaderManager;
 import android.content.ContentValues;
@@ -23,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.inventoryappshawnwalsh.data.InventoryContract;
+
 
 public class EditorActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
